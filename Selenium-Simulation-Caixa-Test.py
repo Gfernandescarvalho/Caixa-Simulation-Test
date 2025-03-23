@@ -8,6 +8,13 @@ import os
 import time
 
 
+#Install Selenium
+try:
+    import selenium
+except ImportError:
+    import os
+    os.system("pip install selenium")
+
 #Set Chrome to download the final result PDF in the end
 download_path = os.path.join(os.path.expanduser("~"), "Downloads")
 chrome_options = Options()
