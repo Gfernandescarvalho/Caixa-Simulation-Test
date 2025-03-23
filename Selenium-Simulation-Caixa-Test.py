@@ -41,7 +41,7 @@ def go_to_element(driver, element):
 #Function to select an element
 def fieldValue(driver, dropDown_element, dropDownn_id, valor):
     go_to_element(driver, dropDown_element)
-    time.sleep(0.6)
+    time.sleep(1)
     dropDown = driver.find_element(By.ID, dropDownn_id)
     dropDown.click()
     dropDown.send_keys(valor)
