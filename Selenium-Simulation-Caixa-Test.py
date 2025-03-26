@@ -196,8 +196,6 @@ finalTestCheck = timerController.until(
 
 #Download Results PDF
 driver.execute_script('window.print();')
-
-# Esperar a impressão ser concluída (ajuste o tempo conforme necessário)
 time.sleep(10)
 
 # Fechar o navegador
